@@ -1,8 +1,8 @@
 import Arena
 from MCTS import MCTS
-from alquerque.AlquerqueGame import AlquerqueGame
-from alquerque.AlquerquePlayers import *
-from alquerque.keras.NNet import NNetWrapper as NNet
+from alquerque_comparable.AlquerqueGame import AlquerqueGame
+from alquerque_comparable.AlquerquePlayers import *
+from alquerque_comparable.keras.NNet import NNetWrapper as NNet
 
 import sys
 sys.setrecursionlimit(199999)
@@ -33,7 +33,7 @@ hp = HumanAlquerquePlayer(g).play
 
 # nnet players
 n1 = NNet(g)
-n1.load_checkpoint('./best_models/200_nonsymetric_10max_100MCTS/', 'best.h5')
+n1.load_checkpoint('./alquerque_comparable/Best_models/', 'pesado.h5')
 
 args1 = dotdict({'numMCTSSims': 150, 'cpuct':1.0})
 mcts1 = MCTS(g, n1, args1)

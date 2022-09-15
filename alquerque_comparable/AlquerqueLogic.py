@@ -196,30 +196,33 @@ class Board():
 
         else:
 
-            ## Delete self.pieces that have not jumped when given the opportunity
+            # ## Delete self.pieces that have not jumped when given the opportunity
 
-            should_jump = []
+            # should_jump = []
 
-            for m in self.get_legal_moves(color):
+            # for m in self.get_legal_moves(color):
 
-                s_0, s_1, e_0, e_1 = m
+            #     s_0, s_1, e_0, e_1 = m
 
-                d_0 = e_0-s_0
-                d_1 = e_1-s_1
+            #     d_0 = e_0-s_0
+            #     d_1 = e_1-s_1
 
-                if 2 in [abs(d_0), abs(d_1)]: # Salto
+            #     if 2 in [abs(d_0), abs(d_1)]: # Salto
 
-                    # print("debería haber saltado")
+            #         # print("debería haber saltado")
 
-                    self.pieces[s_0][s_1] = 0
-                    should_jump.append((s_0,s_1))
+            #         self.pieces[s_0][s_1] = 0
+            #         should_jump.append((s_0,s_1))
                     
-            # If the movement is not one of the pieces that should have jumped, keep it
+            # # If the movement is not one of the pieces that should have jumped, keep it
 
             # if (start_0, start_1) not in should_jump:
 
             #     self.pieces[start_0][start_1] = 0
             #     self.pieces[end_0][end_1] = color
+
+            self.pieces[start_0][start_1] = 0
+            self.pieces[end_0][end_1] = color
 
         ### add a move to the counter, using base 3 (-1,0,1)
         n_moves = (self.pieces[5][4]+1)+(self.pieces[5][3]+1)*3+(self.pieces[5][2]+1)*3**2+(self.pieces[5][1]+1)*3**3
