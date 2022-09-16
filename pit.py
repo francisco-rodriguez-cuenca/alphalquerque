@@ -33,7 +33,7 @@ hp = HumanAlquerquePlayer(g).play
 
 # nnet players
 n1 = NNet(g)
-n1.load_checkpoint('./alquerque_comparable/Best_models/', 'pesado.h5')
+n1.load_checkpoint('./alquerque/Best_models/', 'pesado.h5')
 
 args1 = dotdict({'numMCTSSims': 150, 'cpuct':1.0})
 mcts1 = MCTS(g, n1, args1)
