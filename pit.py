@@ -1,8 +1,8 @@
 import Arena
 from MCTS import MCTS
-from alquerque_comparable.AlquerqueGame import AlquerqueGame
-from alquerque_comparable.AlquerquePlayers import *
-from alquerque_comparable.keras.NNet import NNetWrapper as NNet
+from alquerque.AlquerqueGame import AlquerqueGame
+from alquerque.AlquerquePlayers import *
+from alquerque.keras.NNet import NNetWrapper as NNet
 
 import sys
 sys.setrecursionlimit(199999)
