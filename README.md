@@ -1,6 +1,6 @@
 # alphalquerque
 
-The application of AlphaZero to the game Alquerque de Doce
+The application of AlphaZero to the game Alquerque de Doce by Francisco Rodríguez Cuenca
 
 Based on the simplified, highly flexible, commented and (hopefully) easy to understand implementation of self-play based reinforcement learning based on the AlphaGo Zero paper (Silver et al) developed by Surag Nair on https://github.com/suragnair/alpha-zero-general. An accompanying tutorial can be found [here](http://web.stanford.edu/~surag/posts/alphazero.html). 
 
